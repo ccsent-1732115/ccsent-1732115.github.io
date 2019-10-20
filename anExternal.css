@@ -1,0 +1,50 @@
+/* Name: CC Sent
+ * Date: 10/20/2019
+ * Level: Master
+ *      - Two paragraphs that each have a different font (see lines 44-50)
+ *      - One more unique CSS command that was not discussed in the workshop (see line 18)
+ *      - Text that is centered on a photo (see lines 14-17)
+ *      - A photo with 20 pixel margins on each side (see lines 40-42)
+ *      - Text with a border that uses dotted lines (see line 30)
+ *      - A floated element (decided to use flexbox instead of float to position elements; see lines 21-26)
+ *      - An element with rounded border corners (see line 31)
+ *      - See someCss.html for the rest of the criteria
+*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration-line: underline;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div {
+    padding: 20px;
+    border-style: dotted;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Modak', cursive;
+    text-align: center;
+    font-size: 30px;
+}
+
+img {
+    margin: 20px;
+}
+
+.what {
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+.how {
+    font-family: 'Fascinate Inline', cursive;
+}
