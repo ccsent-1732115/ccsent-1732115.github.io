@@ -1,0 +1,218 @@
+<!-- 
+    Name: CC Sent
+    Date: 11/1/2019
+    Level: Master
+        - Added text field for full name (line 53)
+        - Added password field for UW Net ID (line 35)
+        - Added text area for "Why do you want this job?" question (line 197)
+        - Added radio buttons for grades (line 71)
+        - Added check boxes for INFO classes (line 101)
+        - Added drop-down list for school year (line 59)
+        - Added submit button (line 212)
+        - Added form action (line 30)
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>INFO 101 TA Application</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<h2>INFO 101 TA Application</h2>
+<p>&nbsp;</p>
+
+<form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset class="form-group row" >
+		<legend>gClass Account</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">UW Net ID</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="id">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Password</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="password">
+			</div>
+        </div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset class="form-group row" >
+		<legend>Personal Information</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Full name</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="name">
+			</div>
+        </div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">School Year</label>
+			<div class="col-sm-9">
+				<select class="form-control" name="year">
+					<option value="" selected="true">Choose a School Year</option>
+					<option value="fresh">Freshman</option>
+					<option value="soph">Sophomore</option>
+					<option value="junior">Junior</option>
+					<option value="senior">Senior</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-12 control-label">INFO 101 Grade</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="radio">
+					<label>
+						<input type="radio" name="a" value="no">4.0-3.5 (A)
+					</label>
+                </div>
+                <div class="radio">
+					<label>
+						<input type="radio" name="b" value="no">3.4-2.5 (B)
+					</label>
+                </div>
+                <div class="radio">
+					<label>
+						<input type="radio" name="c" value="no">2.4-1.5 (C)
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="d" value="no">1.4-0.7 (D)
+					</label>
+                </div>
+                <div class="radio">
+					<label>
+						<input type="radio" name="e" value="yes">0.6-0.0 (E)
+					</label>
+				</div>
+			</div>
+        </div>
+        <div class="form-group row">
+			<label class="col-sm-12 control-label">INFO Classes Taken</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="info101" value="info101">
+						INFO 101
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="info102" value="info102">
+						INFO 102
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="info180" value="info180">
+						INFO 180
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="info198" value="info198">
+						INFO 198
+					</label>
+                </div>
+                <div class="checkbox">
+					<label>
+						<input type="checkbox" name="info200" value="info200">
+						INFO 200
+					</label>
+                </div>
+                <div class="checkbox">
+					<label>
+						<input type="checkbox" name="info201" value="info201">
+						INFO 201
+					</label>
+                </div>
+                <div class="checkbox">
+					<label>
+						<input type="checkbox" name="info270" value="info270">
+						INFO 270
+					</label>
+				</div>
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<legend>Available</legend>
+		<div class="form-group row">
+			<label class="col-sm-12 control-label">Hours available</label>
+			<div class="col-sm-12">
+				<table class="table table-bordered">
+					<tr>
+						<td></td>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>
+					</tr>
+					<tr>
+						<th>From</th>
+						<td><input class="form-control" type="time" name="su_from"></td>
+						<td><input class="form-control" type="time" name="mo_from"></td>
+						<td><input class="form-control" type="time" name="tu_from"></td>
+						<td><input class="form-control" type="time" name="we_from"></td>
+						<td><input class="form-control" type="time" name="th_from"></td>
+						<td><input class="form-control" type="time" name="fr_from"></td>
+						<td><input class="form-control" type="time" name="sa_from"></td>
+					</tr>
+					<tr>
+						<th>Until</th>
+						<td><input class="form-control" type="time" name="su_until"></td>
+						<td><input class="form-control" type="time" name="mo_until"></td>
+						<td><input class="form-control" type="time" name="tu_until"></td>
+						<td><input class="form-control" type="time" name="we_until"></td>
+						<td><input class="form-control" type="time" name="th_until"></td>
+						<td><input class="form-control" type="time" name="fr_until"></td>
+						<td><input class="form-control" type="time" name="sa_until"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="form-group">
+			<label class="control-label">Why do you want this job?</label>
+			<textarea class="form-control" name="want" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+			<label class="control-label">Why would you be good for this job?</label>
+			<textarea class="form-control" name="good_for" rows="10"></textarea>
+		</div>
+		<div class="form-group">
+			<label class="control-label">Describe an INFO 101 project</label>
+			<textarea class="form-control" name="project" rows="10"></textarea>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
+
+	<p>&nbsp;</p>
+
+</form>
+</div><!-- close .container -->
+</body>
+</html>
